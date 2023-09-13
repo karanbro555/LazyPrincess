@@ -78,7 +78,7 @@ URL_MODE = is_enabled((environ.get("URL_MODE")), True)
 
 # URL Shortener
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'api.shareus.in/shortLink')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '7SUxJ0ZtBdVoRWqHLiC5Ef7J4I53)
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '7SUxJ0ZtBdVoRWqHLiC5Ef7J4I53')
 
 # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 180))
