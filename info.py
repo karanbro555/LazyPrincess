@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'LazyPrincess')
-API_ID = int(environ.get('API_ID', '13323016'))
-API_HASH = environ.get('API_HASH', '68e791e616100248b0a53ae86a661a12')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '26744850'))
+API_HASH = environ.get('API_HASH', '6ec3f450bb9e9ab23f050dbafe6acbb6')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6337767887:AAEkWLmaJwkxq3lRnCskkfjgO3Zaqp5_oN0")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -26,7 +26,7 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/68d28011b2bc356b5db01.png')
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1484670284').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001620891165').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001590951427').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1484670284').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1001765107260')
