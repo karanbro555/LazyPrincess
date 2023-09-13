@@ -69,7 +69,7 @@ FLOOD = int(environ.get("FLOOD", "10"))
 LAZY_MODE = bool(environ.get("LAZY_MODE" "True"))
 #Add user id of the user in this field those who you want to be Authentic user for file renaming features --------- !
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '1229173534').split()]
-LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
+LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [1229173534]
 # Only Give Value in LAZY_RENAMERS if you have enabled LAZY_MODE ----- !
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 #   REQ_CHANNEL is for the logs of that content name which is not found in group -- !
